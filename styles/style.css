@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #233939;
+}
+
+body {
+  background: #fffde6;
+  position: relative;
+}
+
+p{
+  font-size: clamp(1rem,2vw,1.5rem)
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #224435;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fffde6;
+  transition: 0.5s;
+}
+
+.btna {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #fffde6;
+  padding: 15px;
+  border-radius: 10px;
+  color: #224435;
+  transition: 0.5s;
+  border: 2px solid #224435;
+}
+
+.btn:hover {
+  background: #fffde6;
+  color: #224435;
+}
+
+.btna:hover {
+  color: #fffde6;
+  background: #224435;
+}
+
+header .contHeader{
+  background: #fffde6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+header nav {
+  margin-right: 30px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul a {
+  padding-left: 10px;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+header ul a:hover {
+  opacity: 1;
+}
+
+header .logo {
+  width: 10%;
+}
+
+header img {
+  width: 80%;
+}
+
+footer {
+  width: 100%;
+
+  .content {
+    padding: 70px 30px 20px;
+    max-width: 100%;
+  }
+
+  .sociale {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sociale a:hover {
+    background-color: #224435;
+    color: #ddeee6;
+  }
+
+  .sociale a:hover i {
+    color: #ddeee6;
+    transition: 0.5s;
+  }
+
+  .navigo {
+    margin: 30px 0;
+  }
+
+  .navigo ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .navigo ul li a {
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  .navigo ul li a:hover {
+    opacity: 1;
+  }
+
+  .copy {
+    background-color: #fffde6;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.bugere{
+  width: 100%;
+  display: none;
+}
+
+.buger{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ddeee6;
+}
+
+
+
+/*max*/
+
+@media screen and (max-width: 1024px) {
+
+  header{
+    display: flex;
+    justify-content: center;
+  }
+  header .contHeader {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: rgba(255, 253, 230,0.5);
+  }
+  header .logo {
+    width: 40%;
+  }
+
+  header i{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:567) {
+
+  
+}
+
+/*min*/
+@media screen and (min-width: 1025px) {
+
+  header .contHeader i{
+    display: none;
+  }
+
+  .sociale a {
+    padding: 10px;
+    background-color: #ddeee6;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  .sociale a i {
+    font-size: 2rem;
+    opacity: 0.9;
+  }
+}
+
+h1 {
+  font-family: "Syne";
+}
+
+.title {
+  font-family: "Syne";
+}
+
+h2 {
+  font-size: 3.1rem;
+  font-family: "Syne";
+}
+
+h3 {
+  font-family: "Syne";
+}
+
+p,
+span {
+  font-size: 1.2rem;
+  font-family: "Overpass";
+}
+
+a {
+  font-family: "Overpass";
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url(../fonts/Syne-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-VariableFont_wght.ttf);
+}
+
+/*unique*/
+
+.banière {
+  .contenaire {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+}

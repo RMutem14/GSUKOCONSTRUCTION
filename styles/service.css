@@ -1,0 +1,520 @@
+/*section presentation*/
+
+.architecture {
+  background: #224435;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    display: flex;
+    gap: 15px;
+  }
+
+  .carte {
+    width: 250px;
+    height: auto;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #fff;
+  }
+}
+
+.genieCivil {
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .carte {
+    width: 500px;
+    height: auto;
+    background: #fffde6;
+  }
+
+  span {
+    background: #ddeee6;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px 5px 10px 5px;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+}
+
+.commerciale {
+  img {
+    border-radius: 10px;
+  }
+
+  .gift {
+    width: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+  }
+
+  .gift:hover{
+    background-color: rgba(255, 253, 230, 0.5);
+  }
+
+  .accordions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .contentBx {
+    height: 100%;
+  }
+
+  .details {
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+
+  .contentBx.active .details {
+    height: 100%;
+  }
+
+  li {
+    list-style: disc;
+    font-size: 1.2rem;
+  }
+}
+
+.hydraulique {
+  background-image: url(../image/hydrau.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  span {
+    font-size: 1.5rem;
+    font-family: "Syne";
+  }
+
+  .card {
+    display: flex;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: auto;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+  header ul {
+    display: none;
+  }
+
+  .banière {
+    padding-top: 70px;
+    .contenaire {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .imgBx {
+      width: 90%;
+    }
+
+    img {
+      width: 100%;
+      height: 90%;
+      border-radius: 5px;
+    }
+  }
+
+  .architecture {
+    .contenaire {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .carte {
+      width: 77%;
+      border-radius: 6px;
+    }
+  }
+
+  .genieCivil {
+    .contenaire {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .imgBx {
+      width: 90%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .carte {
+      width: 77%;
+      border-radius: 6px;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .commerciale {
+    .contenaire {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .imgBx {
+      width: 90%;
+    }
+
+    img {
+      width: 100%;
+      height: 90%;
+    }
+  }
+
+  .hydraulique {
+    .contenaire {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 100%;
+    }
+    .position {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 253, 230, 0.5);
+    }
+    .fleche {
+      background: #ddeee6;
+      width: 20%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      clip-path: polygon(
+        30% 0%,
+        70% 0%,
+        100% 30%,
+        100% 70%,
+        70% 100%,
+        30% 100%,
+        0% 70%,
+        0% 30%
+      );
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .carte {
+      width: 77%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  p,
+  a {
+    font-size: 1rem;
+  }
+  .btn,
+  .btna {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .navigo ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sociale a {
+    padding: 10px;
+    background-color: #ddeee6;
+    margin: 2px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  .sociale a i {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /*section baière*/
+
+  .banière {
+    height: 100vh;
+    position: relative;
+
+    .contenaire {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #fffde6;
+      width: 900px;
+      height: auto;
+      padding: 80px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 50px;
+    }
+
+    img {
+      width: 400px;
+      height: 450px;
+      border-radius: 10px;
+    }
+  }
+
+  .architecture {
+    height: 100vh;
+    position: relative;
+    margin-bottom: 120px;
+
+    .contenaire {
+      width: 900px;
+      height: auto;
+      padding: 80px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .genieCivil {
+    position: relative;
+    height: 100vh;
+    margin-bottom: 150px;
+    .contenaire {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 100px;
+      width: 900px;
+      height: auto;
+      padding: 80px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    img {
+      width: 300px;
+      object-fit: cover;
+      height: 130vh;
+      border-radius: 10px;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      margin-left: 40px;
+    }
+  }
+
+  .commerciale {
+    position: relative;
+    height: 100vh;
+    .contenaire {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+      width: 900px;
+      height: auto;
+      padding: 80px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .details {
+      padding-left: 30px;
+    }
+  }
+
+  .hydraulique {
+    height: 80vh;
+    position: relative;
+
+    .contenaire {
+      width: 900px;
+      height: auto;
+      padding: 80px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .position {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 253, 230, 0.5);
+    }
+    .fleche {
+      background: #ddeee6;
+      width: 100%;
+      height: 50px;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      clip-path: polygon(90% 1%, 100% 50%, 90% 100%, 0% 100%, 11% 49%, 0 0);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-size: 1.5rem;
+      font-family: "Syne";
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .carte {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      height: auto;
+    }
+  }
+}
