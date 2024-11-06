@@ -53,6 +53,7 @@ header .contHeader{
   align-items: center;
   position: fixed;
   width: 100%;
+  height: 12%;
   z-index: 3;
 }
 
